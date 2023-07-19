@@ -1,0 +1,80 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url(./assest/Path\ 15.png);
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+h1 {
+    font-size: 86px;
+    color: #D3E10E;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-top: 10%;
+}
+
+p {
+    font-size: 20px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+
+
+
+
+form {
+    margin-top: 25%;
+    display: grid;
+    grid-template-areas: "label label ." "text email button";
+    justify-content: center;
+}
+
+form label {
+    color: #011560;
+    text-align: right;
+    width: 20vw;
+}
+
+form input {
+    background-color: #F6F6F6;
+    border-bottom: 4px solid #D3E10E;
+
+}
+
+form #text {
+    grid-area: text;
+}
+
+form #email {
+    grid-area: email;
+}
+
+form button {
+    padding: 10px 20px;
+    grid-area: button;
+    margin-right: 5px;
+    background-color: #D3E10E;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+@media (max-width:800px) {
+    form {
+        display: flex !important;
+        flex-direction: column;
+        margin: 250px auto;
+        width: 50%;
+    }
+
+    h1 {
+        padding-top: 10vh;
+        font-size: 70px !important;
+    }
+}

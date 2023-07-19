@@ -1,0 +1,135 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Heebo', sans-serif;
+
+}
+
+.container {
+    width: 50%;
+    padding-top: 10vh;
+    padding-left: 10px;
+}
+
+.container h1 {
+
+    text-align: right;
+    direction: rtl;
+    color: #FDBD03;
+    font-size: 66px;
+    font-family: 'Heebo', sans-serif;
+}
+
+.container p {
+    color: #020253;
+    font-size: 20px;
+}
+
+.container form {
+    text-align: right;
+    display: grid;
+    gap: 5PX;
+    grid-template-areas:
+        ". ."
+        "text email"
+        "name ."
+        "tarea tarea"
+        "btn .";
+}
+
+input {
+    background-color: #E5EEFF;
+    border-bottom: 3px solid #FDBD03;
+}
+
+#text {
+    grid-area: text;
+}
+
+#email {
+    grid-area: email;
+}
+
+#textarea {
+    grid-area: tarea;
+    height: 100px;
+}
+
+#btn {
+    grid-area: btn;
+    width: 110px;
+}
+
+.container button {
+    background-color: #FDBD03;
+    color: black;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+
+}
+
+.phone {
+    position: absolute;
+    right: 0;
+    top: 10vh;
+    max-width: 50%;
+    height: 90vh;
+}
+
+.wht {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    background-color: #FDBD03;
+    border-radius: 50px;
+    padding: 10px;
+}
+
+.icons {
+    padding-top: 100px;
+    display: flex;
+    gap: 20px;
+    padding-left: 20px;
+
+}
+
+.icons img {
+    background-color: #FDBD03;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+@media (max-width:800px) {
+    body {
+        /* margin: 0 auto; */
+        text-align: center;
+    }
+
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    form {
+        display: flex !important;
+        flex-direction: column;
+    }
+
+    .phone {
+        height: 30vh;
+        position: unset;
+    }
+
+    .wht {
+        display: none;
+    }
+
+    .icons {
+        justify-content: center;
+    }
+
+
+}

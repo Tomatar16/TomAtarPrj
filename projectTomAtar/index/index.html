@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .navbar {
+            width: 100%;
+            height: 50px;
+            direction: rtl;
+            position: fixed;
+            background-color: white;
+            line-height: 2;
+            z-index: 1;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-family: 'Varela Round', sans-serif;
+        }
+
+        .navbarRight a {
+            list-style-type: none;
+            width: 100px;
+            margin-bottom: 60px;
+            margin-right: 20px;
+        }
+
+
+        .navbar a:hover {
+            color: lightblue;
+        }
+
+        .topic {
+            width: 100%;
+            height: 300px;
+            background-color: lightblue;
+        }
+
+        .topic h1 {
+            text-align: center;
+            padding-top: 70px;
+            font-size: 3rem;
+            font-family: 'Varela Round', sans-serif;
+            ;
+
+        }
+
+        .topic h1 p {
+            text-align: center;
+            font-size: 1rem;
+            padding-top: 50px;
+            font-family: 'Varela Round', sans-serif;
+        }
+
+        .iconbar {
+            width: 100%;
+            text-align: center;
+            box-shadow: 4px 4px 4px gray;
+        }
+
+        .about {
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .about h1 {
+            font-size: 3rem;
+            font-family: 'Varela Round', sans-serif;
+        }
+
+        .about h1 p {
+            font-size: 1rem;
+            padding-top: 20px;
+            font-family: 'Varela Round', sans-serif;
+            direction: rtl;
+        }
+
+        .cv {
+            background-color: lightblue;
+            color: black;
+            font-size: 1rem;
+            font-family: 'Varela Round', sans-serif;
+            border: 0;
+            border-radius: 15px;
+            margin-top: 15px;
+            padding: 10px;
+            font-weight: bold;
+            float: none;
+        }
+
+        .cv:hover {
+            color: black
+        }
+
+        .cards {
+            width: 100%;
+            padding-bottom: 50px;
+            background-color: rgb(248, 246, 246);
+            text-align: center;
+        }
+
+        .cards h1 {
+            font-size: 3rem;
+            font-family: 'Varela Round', sans-serif;
+            padding-top: 30px;
+        }
+
+        .cards h1 p {
+            font-family: 'Varela Round', sans-serif;
+            font-size: 1.5rem;
+            margin-top: 15px;
+        }
+
+        .contact {
+            direction: rtl;
+            height: 700px;
+            background-color: #3A3A3A;
+            color: white;
+            width: 100%;
+            font-family: 'Varela Round', sans-serif;
+            font-weight: bold;
+        }
+
+        .contact textarea {
+            resize: none;
+            width: 30%;
+            height: 200px;
+            border-bottom: lightblue solid 5px;
+        }
+
+        .contact h1 {
+            font-size: 3rem;
+            display: block;
+            width: 50%;
+            margin-right: 30px;
+        }
+
+        .contact h1 p {
+            font-size: 1.5rem;
+        }
+
+        .contact form {
+            display: flex;
+            align-items: start;
+            flex-direction: column;
+            margin-right: 30px;
+
+        }
+
+        .contact form img {
+            right: 65%;
+            position: absolute;
+            height: 500px;
+            width: 500px;
+            padding-bottom: 40px;
+        }
+
+        .contact form input {
+            width: 30%;
+            border-bottom: lightblue solid 5px;
+        }
+
+        .contact button {
+            height: 40px;
+            width: 10%;
+            margin-top: 10px;
+            border-radius: 15px;
+            background-color: lightblue;
+            color: black;
+            font-family: 'Varela Round', sans-serif;
+            font-weight: bold;
+        }
+
+        .footer {
+            width: 100%;
+            background-color: lightblue;
+            display: flex;
+            justify-content: space-evenly;
+            padding: 20px 10px;
+        }
+
+        .footer img {
+            height: 25px;
+        }
+
+        .footer-name {
+            background-color: black;
+            height: 60px;
+            color: lightblue;
+            font-weight: bold;
+            font-family: 'Varela Round', sans-serif;
+            line-height: 3.5;
+            border-bottom: lightblue solid 4px;
+        }
+
+        .btn-prj {
+            list-style-type: none;
+            width: 100px;
+            margin: 10px;
+            border-radius: 15px;
+            padding: 10px;
+            background-color: #1AE0EC;
+            font-weight: bold;
+
+        }
+
+        @media screen and (max-width:800px) {
+            .cards section {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbarRight">
+            <a href="#topic">ראשי</a>
+            <a href="#about">אודות</a>
+            <a href="#cards">שירותים</a>
+            <a href="#contact">צור קשר</a>
+        </div>
+        <div>
+            <a href="#">Tom Atar</a>
+            <img src="./assest/profileSmall.png" alt="profile pic">
+        </div>
+
+    </nav>
+
+    <div id="topic" class="topic">
+        <h1>תיק עבודות
+            <p>
+                .כאן תוכלו למצוא את כל הפרויקטים שבניתי באמצעות סוגי שפות תכנות שונות
+            </p>
+
+        </h1>
+    </div>
+    <div class="iconbar">
+        <a href="#cards">
+            <img src="./assest/img-Bootstrap.png" alt="">
+            <img src="./assest/img-CSS.png" alt="">
+            <img src="./assest/img-HTML.png" alt="">
+            <img src="./assest/img-JS.png" alt="">
+            <img src="./assest/img-SASS.png" alt="">
+        </a>
+    </div>
+    <div id="about" class="about">
+        <img src="./assest/profile.png" alt="">
+        <h1>קצת עליי
+            <p>שלום, אני טום עטר מתמקצע בתחום בנייה ועיצוב אתרים הציפייה שלי היא ליצור אתרים שנראים טוב ויזואלית ומאוד
+                ידידותיים לחווית המשתשמש.
+                <br>
+                רכשתי ידע בשפות התכנות:<br>
+                HTML, CSS, SASS, JavaScript
+            </p>
+        </h1>
+
+        <a class="cv" href="./assest/קורות חיים טום עטר.pdf" target="_blank">להורדת קורות חיים לחץ כאן</a>
+    </div>
+
+    <div id="cards" class="cards">
+        <h1>עבודות נבחרות
+            <p>כאן תוכלו לצפות בכל הפרויקטים שבניתי</p>
+        </h1>
+        <section class="container mt-5 d-flex justify-content-evenly">
+            <div class="card" style="width: 18rem;">
+                <img src="../coffiePage/assestCoffie/coffiePicProjectPage.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">קפה טוב ליום טוב</h5>
+                    <p class="card-text"> לורם איפסום או בקיצור ליפסום, הוא מלל מקובל וחסר משמעות המשמש “ממלא מקום” בעת
+                        עריכה,</p>
+                    <a href="../coffiePage/prjPage.html" class="btn-prj">לעמוד הפרוייקט</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="../hereAndNowPage/assestHereAnd/HereAndNowPic.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Here And Now</h5>
+                    <p class="card-text">לורם איפסום או בקיצור ליפסום, הוא מלל מקובל וחסר משמעות המשמש “ממלא מקום” בעת
+                        עריכה,</p>
+                    <a href="../hereAndNowPage/prjPage.html" class="btn-prj">לעמוד הפרוייקט</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="../letUsPage/assest/prjPic.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">תן לנו להוביל אותך</h5>
+                    <p class="card-text">לורם איפסום או בקיצור ליפסום, הוא מלל מקובל וחסר משמעות המשמש “ממלא מקום” בעת
+                        עריכה,</p>
+                    <a href="../letUsPage/prjPage.html" class="btn-prj">לעמוד הפרוייקט</a>
+                </div>
+            </div>
+        </section>
+        <section class="container mt-5 d-flex justify-content-evenly">
+            <div class="card" style="width: 18rem;">
+                <img src="../freePage/assest/prjPic.png" class="card-img-top img-fluid" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">ייעוץ חינם</h5>
+                    <p class="card-text">לורם איפסום או בקיצור ליפסום, הוא מלל מקובל וחסר משמעות המשמש “ממלא מקום” בעת
+                        עריכה,</p>
+                    <a href="../freePage/prj.html" class="btn-prj">לעמוד הפרוייקט</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="../galleryPage/assest/prjPic.png" class="card-img-top img-fluid" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">לגלות את העולם</h5>
+                    <p class="card-text">לורם איפסום או בקיצור ליפסום, הוא מלל מקובל וחסר משמעות המשמש “ממלא מקום” בעת
+                        עריכה,</p>
+                    <a href="../galleryPage/prj.html" class="btn-prj">לעמוד הפרוייקט</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="../simpleForm/assest/prjPic.png" class="card-img-top img-fluid" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">קדימה</h5>
+                    <p class="card-text">לורם איפסום או בקיצור ליפסום, הוא מלל מקובל וחסר משמעות המשמש “ממלא מקום” בעת
+                        עריכה,</p>
+                    <a href="../simpleForm/prj.html" class="btn-prj">לעמוד הפרוייקט</a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div id="contact" class="contact">
+        <h1>צור קשר
+            <p>לורם איפסום דולור אמט, קונסקטורר אדיפיסינג אלית להאמית קרהשק סכעיט דז מא, מנכם למטכין נשואי מנורך.
+            </p>
+        </h1>
+
+        <form action="" method="get">
+            <!-- (label+input)*2 -->
+            <label for="name">שם מלא:</label>
+            <input type="text" id="name"><br>
+            <label for="email">דוא"ל</label>
+            <input type="text" id="email"><br>
+            <label for="phone">מספר טלפון:</label>
+            <input type="text" id="phone"><br>
+
+            <label for="">תוכן ההודעות</label>
+            <textarea name="" id="" maxlength=""></textarea>
+            <img src="./assest/Rectangle 41.png" alt="">
+            <button>שליחה</button>
+    </div>
+    <div class="footer">
+        <div> <img src="./assest/Icon awesome-facebook-f.png" alt=""></div>
+        <div> <img src="./assest/Icon awesome-linkedin-in.png" alt=""></div>
+        <div> <img src="./assest/Icon Phone.png" alt=""></div>
+        <div> <img src="./assest/Icon simple-email.png" alt=""></div>
+        <div> <img src="./assest/Icon simple-whatsapp1.png" alt=""></div>
+        <div> <img src="./assest/iconLocation.png" alt=""></div>
+    </div>
+    <div class="footer-name">
+        <p> Tom Atar </p>
+    </div>
+</body>
+
+</html>
