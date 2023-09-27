@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <title>prPage</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Varela Round", sans-serif;
+      }
+
+      .navbar {
+        width: 100%;
+        height: 50px;
+        direction: rtl;
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+        line-height: 2;
+        z-index: 1;
+      }
+
+      a {
+        text-decoration: none;
+        color: black;
+      }
+
+      .navbarRight a {
+        list-style-type: none;
+        width: 100px;
+        margin-bottom: 60px;
+        margin-right: 20px;
+      }
+
+      .navbar a:hover {
+        color: lightblue;
+      }
+
+      .topic {
+        width: 100%;
+        height: 300px;
+        background-color: lightblue;
+      }
+
+      .topic h1 {
+        text-align: center;
+        padding-top: 70px;
+        font-size: 3rem;
+        font-family: "Varela Round", sans-serif;
+      }
+
+      .topic h1 p {
+        text-align: center;
+        font-size: 1rem;
+        padding: 50px;
+        font-family: "Varela Round", sans-serif;
+      }
+
+      .iconbar {
+        width: 100%;
+        text-align: center;
+        box-shadow: 4px 4px 4px gray;
+      }
+
+      .picture {
+        text-align: center;
+        background-color: #ebfeff;
+        margin-top: 5px;
+      }
+
+      .picture img {
+        width: 50%;
+        margin: 60px 0;
+        box-shadow: 4px 4px 4px gray;
+      }
+
+      .footer-name {
+        background-color: black;
+        height: 50px;
+        color: lightblue;
+        font-weight: bold;
+        line-height: 3;
+        border-bottom: lightblue solid 4px;
+      }
+
+      .btns {
+        text-align: center;
+      }
+
+      .btns a {
+        list-style-type: none;
+        width: 100px;
+        margin: 10px;
+        border-radius: 15px;
+        padding: 10px;
+        background-color: #1ae0ec;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="navbarRight">
+        <a href="#topic">ראשי</a>
+        <a href="#about">אודות</a>
+        <a href="#cards">שירותים</a>
+        <a href="#contact">צור קשר</a>
+      </div>
+      <div>
+        <a href="../index/index.html">Tom Atar</a>
+        <img src="../index/assest/profileSmall.png" alt="profile pic" />
+      </div>
+    </nav>
+    <div id="topic" class="topic">
+      <h1>
+        weather
+        <p>
+          לורם איפסום או בקיצור ליפסום, הוא מלל מקובל וחסר משמעות המשמש “ממלא
+          מקום” בעת עריכה, בתחום הדפוס, ההדפסה והפרסום.
+        </p>
+      </h1>
+      <div class="btns">
+        <a href="./index.html">לצפייה בפרוייקט</a>
+        <a href="./index.html" download>להורדת הפרויקט</a>
+      </div>
+    </div>
+    <div class="iconbar">
+      <a href="#cards">
+        <img src="../index/assest/img-Bootstrap.png" alt="" />
+        <img src="../index/assest/img-CSS.png" alt="" />
+        <img src="../index/assest/img-HTML.png" alt="" />
+        <img src="../index/assest/img-JS.png" alt="" />
+        <img src="../index/assest/img-SASS.png" alt="" />
+      </a>
+    </div>
+    <div class="picture">
+      <img src="./weatherPic.png" alt="" />
+    </div>
+    <div class="footer-name">
+      <p>Tom Atar</p>
+    </div>
+  </body>
+</html>

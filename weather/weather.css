@@ -1,0 +1,14 @@
+body {
+  background-color: skyblue;
+}
+.container {
+  text-align: center;
+}
+.mezeg {
+  border: 3px solid black;
+  margin: 2px auto;
+  width: 40%;
+}
+.day {
+  font-weight: bold;
+}

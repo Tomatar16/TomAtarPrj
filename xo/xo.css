@@ -1,0 +1,33 @@
+body {
+  background-color: cornflowerblue;
+}
+.container {
+  border: 8px solid yellow;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 0.3rem;
+  width: 30vw;
+  height: 30vw;
+  margin: 0 auto;
+}
+.container div {
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 5rem;
+}
+#newGame {
+  font-size: 2rem;
+  background-color: yellow;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 45%;
+  margin-top: 5%;
+  box-shadow: 5px 5px 5px 5px black;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+#newGame:hover {
+  background-color: black;
+  color: white;
+}
